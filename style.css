@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: 'Raleway';
+    background-color: rgb(237, 250, 246);
+}
+
+h1 {
+    text-align: center;
+}
+
+h2:hover{
+   color: white;
+   text-shadow: 0 0 5px black;
+   cursor: pointer;
+}
+
+h3 {
+    width: 93%;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    font-size: 31px;
+    text-shadow: 2px 2px 4px grey;
+    cursor: pointer;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(160, 247, 216);
+    width:  200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.webImg {
+    width: 30px;
+    object-fit: cover;
+}
+
+.webImg:hover {
+    width: 35px;
+    border: 1px solid black;
+    padding: 2px;
+    background-color: white;
+    margin: -5px;
+    cursor: pointer;
+}
+
+.commentBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(15px);
+    transition: visibility 0.4s, opacity 0.4s linear;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.showCommentBox {
+    opacity: 1;
+    visibility: visible;
+}
+
+.commentContent {
+    width: 550px;
+    height: 300px;
+    position: relative;
+    top: calc(50% - 200px);
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 4px 4px 6px grey;
+}
+
+.posting {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.input {
+    width: 400px;
+    height: 15px;
+    font-size: 16px;
+    font-family: 'Raleway';
+    padding: 5px;
+    letter-spacing: 1px;
+    resize: none;
+    outline: none;
+    border: 1px solid darkgrey;
+}
+
+button {
+    width: 93px;
+    font-size: 16px;
+    background-color: greenyellow;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid darkgrey;
+}
+
+.text {
+    padding: 20px;
+}
+
+@media (max-width: 667px) {
+    .commentContent {
+        width: 485px;
+    }
+}
+
+@media (max-width: 544px) {
+    .commentContent { 
+        width: 455px;
+    } 
+}
+
+@media (max-width: 484px) {
+    .commentContent {
+        width: 405px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 390px) {
+    .commentContent {
+        width: 360px;
+    }
+    .arrow {
+        padding-right: 20px;
+    }
+  
+}
